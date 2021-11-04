@@ -8,6 +8,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id as string);
   const ex1 = 'ex1';
+  const ex2 = 'ex2';
   return {
     props: {
       postData
